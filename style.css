@@ -1,0 +1,63 @@
+/* Général */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;  /* Un fond gris clair */
+    color: #333;  /* Texte foncé pour une bonne lisibilité */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007BFF;  /* Un bleu vif pour l'en-tête */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Titre principal */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+/* Paragraphe */
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+Associer le fichier CSS à ton fichier HTML :
+Après avoir créé le fichier CSS, il faut maintenant l'associer à ton fichier index.html.
+Retourne dans ton fichier index.html, et ajoute cette ligne dans la section <head> pour lier ton fichier CSS :
+html
+Copier
+Modifier
+<link rel="stylesheet" href="style.css">
+Cela doit apparaître comme suit dans ton fichier index.html :
+
+html
+Copier
+Modifier
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToxiCactus - Les meilleures succulentes et cactus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenue sur ToxiCactus ! Le monde des cactus et succulentes</h1>
+    </header>
+    <main>
+        <p>Sur ce site, tu trouveras des informations sur les cactus et succulentes, ainsi que des conseils pour en prendre soin.</p>
+    </main>
+</body>
+</html>
