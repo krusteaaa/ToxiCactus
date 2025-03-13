@@ -1,117 +1,47 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ToxiCactus - Encyclopédie des Cactus et Succulentes</title>
+    <title>Encyclopédie des Cactus</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 </head>
-
 <body>
+
     <header>
+        <h1>Encyclopédie des Cactus et Succulentes</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="encyclopedia.html">Encyclopédie</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#culture">Guide de culture</a></li>
+                <li><a href="#especes">Espèces</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <!-- Guide complet de culture générale -->
-        <section class="general-guide">
-            <h1>Guide complet de culture des Cactus et Succulentes</h1>
-            <p>Les cactus et succulentes sont des plantes fascinantes et relativement faciles à cultiver, à condition de suivre quelques règles simples. Voici les conseils généraux pour assurer leur bien-être :</p>
+        <section id="culture">
+            <h2>Guide de Culture Général</h2>
+            <p>Les cactus et succulentes sont des plantes fascinantes et résistantes. Voici quelques conseils pour les entretenir :</p>
             <ul>
-                <li><strong>Exposition :</strong> Placez vos plantes dans un endroit lumineux, mais pas en plein soleil toute la journée.</li>
-                <li><strong>Arrosage :</strong> Arrosez légèrement, en laissant le sol sécher entre chaque arrosage.</li>
-                <li><strong>Température :</strong> Les cactus et succulentes préfèrent des températures chaudes. Évitez les endroits trop froids.</li>
-                <li><strong>Substrat :</strong> Utilisez un substrat bien drainé, spécialement conçu pour les plantes succulentes.</li>
+                <li>🌞 **Lumière** : Elles adorent la lumière ! Place-les près d'une fenêtre ensoleillée.</li>
+                <li>💧 **Arrosage** : Peu d'eau ! Une fois toutes les 2-3 semaines suffit.</li>
+                <li>🏜️ **Substrat** : Un sol drainant (mélange terre + sable) est idéal.</li>
+                <li>🌡️ **Température** : Elles supportent bien la chaleur, mais attention au gel !</li>
             </ul>
         </section>
 
-        <!-- Liste des grandes espèces -->
-        <section class="species-list">
-            <h2>Les Grandes Espèces de Cactus et Succulentes</h2>
-            <ul>
-                <li><a href="#cactus">Cactus</a></li>
-                <li><a href="#aloe">Aloe</a></li>
-                <li><a href="#agave">Agave</a></li>
-                <li><a href="#echeveria">Echeveria</a></li>
-                <!-- Ajouter d'autres grandes espèces si nécessaire -->
+        <section id="especes">
+            <h2>Grandes Familles de Cactus</h2>
+            <p>Clique sur une famille pour explorer ses espèces :</p>
+            <ul class="species-list">
+                <li><a href="fiche_cactaceae.html">🌵 Cactaceae</a> (Cactus classiques)</li>
+                <li><a href="fiche_euphorbiaceae.html">🌿 Euphorbiaceae</a> (Ressemblent aux cactus, mais différentes)</li>
+                <li><a href="fiche_agavaceae.html">🌾 Agavaceae</a> (Aloès, agaves, yuccas)</li>
             </ul>
         </section>
-
-        <!-- Cactus -->
-        <section id="cactus" class="species-detail">
-            <h2>Cactus</h2>
-            <p>Les cactus sont connus pour leurs épines et leur capacité à survivre dans des environnements très secs. Voici quelques espèces populaires :</p>
-            <ul>
-                <li><a href="#saguarocactus">Saguaro Cactus</a></li>
-                <li><a href="#pricklypear">Prickly Pear</a></li>
-                <li><a href="#barrelcactus">Barrel Cactus</a></li>
-                <!-- Ajouter d'autres espèces de cactus -->
-            </ul>
-        </section>
-
-        <!-- Aloe -->
-        <section id="aloe" class="species-detail">
-            <h2>Aloe</h2>
-            <p>Les Aloes sont des plantes succulentes souvent utilisées en médecine et cosmétiques. Découvrez les espèces populaires :</p>
-            <ul>
-                <li><a href="#aloevera">Aloe Vera</a></li>
-                <li><a href="#aloesaponi">Aloe Saponaria</a></li>
-            </ul>
-        </section>
-
-        <!-- Agave -->
-        <section id="agave" class="species-detail">
-            <h2>Agave</h2>
-            <p>Les Agaves sont des succulentes robustes qui se trouvent principalement dans les régions arides. Voici des espèces communes :</p>
-            <ul>
-                <li><a href="#agaveamericana">Agave Americana</a></li>
-                <li><a href="#agaveparryi">Agave Parryi</a></li>
-            </ul>
-        </section>
-
-        <!-- Echeveria -->
-        <section id="echeveria" class="species-detail">
-            <h2>Echeveria</h2>
-            <p>Les Echeveria sont des succulentes magnifiques, souvent utilisées dans la décoration d'intérieur. Voici des exemples d'espèces :</p>
-            <ul>
-                <li><a href="#echeverianodulosa">Echeveria Nodulosa</a></li>
-                <li><a href="#echeveriala">Echeveria La</a></li>
-            </ul>
-        </section>
-
-        <!-- Détails pour chaque espèce -->
-        <section id="saguarocactus" class="species-subdetail">
-            <h3>Saguaro Cactus</h3>
-            <img src="assets/images/saguaro_cactus.jpg" alt="Saguaro Cactus">
-            <p><strong>Nom latin :</strong> Carnegiea gigantea</p>
-            <p><strong>Caractéristiques :</strong> Le Saguaro Cactus est l'un des plus grands cactus du monde, pouvant atteindre plus de 12 mètres de hauteur.</p>
-            <p><strong>Conseils de culture :</strong> Il nécessite un sol très bien drainé et un endroit ensoleillé. Ne l'arrosez pas trop, car il préfère un climat sec.</p>
-        </section>
-
-        <section id="pricklypear" class="species-subdetail">
-            <h3>Prickly Pear</h3>
-            <img src="assets/images/pricklypear.jpg" alt="Prickly Pear">
-            <p><strong>Nom latin :</strong> Opuntia spp.</p>
-            <p><strong>Caractéristiques :</strong> Ce cactus est caractérisé par ses grandes épines et ses fruits comestibles.</p>
-            <p><strong>Conseils de culture :</strong> Arrosez modérément. Il aime les sols sableux et bien drainés.</p>
-        </section>
-
-        <!-- Répéter la même structure pour chaque espèce et sous-espèce -->
-
-        <footer>
-            <p>&copy; 2025 ToxiCactus - Tous droits réservés</p>
-        </footer>
     </main>
 
-    <script src="js/main.js"></script>
 </body>
-
 </html>
