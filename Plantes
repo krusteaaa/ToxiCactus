@@ -1,1 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Plantes</title>
+    <link rel="stylesheet" href="css/plantes.css">
+</head>
+<body>
+    <header>
+        <h1>Nos Plantes</h1>
+        <a href="menu.html">Retour au menu</a>
+    </header>
 
+    <main>
+        <section>
+            <h2>Nos Plantes Disponibles</h2>
+            <div>
+                <a href="plante-1.html">Plante 1</a>
+                <a href="plante-2.html">Plante 2</a>
+                <a href="plante-3.html">Plante 3</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ToxiCactus. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
