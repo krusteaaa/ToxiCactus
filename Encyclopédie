@@ -1,1 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encyclopédie des Cactus et Succulentes</title>
+    <link rel="stylesheet" href="css/encyclopedie.css">
+</head>
+<body>
+    <header>
+        <h1>Encyclopédie des Cactus et Succulentes</h1>
+        <a href="menu.html">Retour au menu</a>
+    </header>
 
+    <main>
+        <section>
+            <h2>Explorez notre Encyclopédie</h2>
+            <p>Découvrez les différentes espèces de cactus et succulentes avec leurs caractéristiques.</p>
+            <div>
+                <a href="cactus.html">Les Cactus</a>
+                <a href="succulentes.html">Les Succulentes</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ToxiCactus. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
