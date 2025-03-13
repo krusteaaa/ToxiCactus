@@ -1,1 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remerciements - ToxiCactus</title>
+    <link rel="stylesheet" href="css/remerciements.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="index.html">Retour à l'accueil</a>
+            <h1>Remerciements</h1>
+        </div>
+    </header>
 
+    <main>
+        <section class="thank-you">
+            <h2>Merci à vous !</h2>
+            <p>Un grand merci à tous nos visiteurs, passionnés de plantes, pour soutenir et explorer l'univers des cactus et des succulentes !</p>
+            <p>Nous tenons à remercier nos partenaires et contributeurs :</p>
+            <ul>
+                <li>Partenaire 1</li>
+                <li>Partenaire 2</li>
+                <li>Partenaire 3</li>
+            </ul>
+            <p>Et bien sûr, un immense merci à notre équipe et à notre communauté de passionnés pour faire de ce projet une belle aventure !</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ToxiCactus. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
+2️⃣ Style pour la page remerciements.css
+css
+Copier
+Modifier
+/* Fichier: css/remerciements.css */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2d6a4f;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin-top: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.thank-you {
+    font-size: 1.2em;
+    color: #333;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.1em;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
