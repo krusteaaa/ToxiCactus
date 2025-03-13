@@ -1,34 +1,88 @@
-/* Général */
+/* Global settings */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;  /* Un fond gris clair */
-    color: #333;  /* Texte foncé pour une bonne lisibilité */
+    font-family: 'Open Sans', sans-serif; /* Police simple et élégante */
+    background-color: white; /* Fond blanc pour la simplicité */
+    color: black; /* Texte noir pour un bon contraste */
     margin: 0;
     padding: 0;
 }
 
+h1, h2 {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Header */
 header {
-    background-color: #007BFF;  /* Un bleu vif pour l'en-tête */
-    color: white;
+    background-color: #f4f4f4; /* Fond léger pour le header */
     padding: 20px;
-    text-align: center;
+    margin-bottom: 20px;
 }
 
-main {
-    padding: 20px;
-    text-align: center;
-}
-
-/* Titre principal */
-h1 {
+header h1 {
     font-size: 2.5em;
-    margin-bottom: 10px;
+    color: #333; /* Gris foncé pour le titre */
 }
 
-/* Paragraphe */
-p {
+/* Section Introduction */
+#introduction {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 40px;
     font-size: 1.2em;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto;
+}
+
+/* Navigation */
+nav {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #007bff; /* Bleu pour les liens */
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #0056b3; /* Lien plus foncé au survol */
+}
+
+/* Sections principales (Encyclopédie et Shop) */
+section {
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+#encyclopedie, #shop {
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+footer a:hover {
+    color: #0056b3;
 }
