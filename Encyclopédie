@@ -1,40 +1,58 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encyclopédie - ToxiCactus</title>
-    <link rel="stylesheet" href="style.css">
+    <title>ToxiCactus - Encyclopédie</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-    <?php include 'includes/header.html'; ?>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="encyclopedia.html">Encyclopédie</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <section id="encyclopedie">
-        <div class="content">
-            <h1>Encyclopédie des Cactus et Succulentes</h1>
-            <p>Explorez les différents types de cactus et succulentes disponibles, apprenez à les cultiver et à en prendre soin.</p>
+    <main>
+        <section class="encyclopedia-intro">
+            <h1>Bienvenue dans l'Encyclopédie des Cactus et Succulentes !</h1>
+            <p>Découvrez notre collection fascinante de cactus et de succulentes. Chaque plante a ses spécificités, ses besoins et son caractère unique. Apprenez à les connaître !</p>
+        </section>
 
-            <div class="categories">
-                <div class="category">
-                    <h2>Cactus</h2>
-                    <ul>
-                        <li><a href="cactus/echinocactus.html">Echinocactus</a></li>
-                        <li><a href="cactus/cereus.html">Cereus</a></li>
-                    </ul>
-                </div>
-
-                <div class="category">
-                    <h2>Succulentes</h2>
-                    <ul>
-                        <li><a href="succulentes/aloevera.html">Aloe Vera</a></li>
-                        <li><a href="succulentes/echeveria.html">Echeveria</a></li>
-                    </ul>
-                </div>
+        <section class="plant-list">
+            <h2>Nos Cactus et Succulentes</h2>
+            <div class="plant-item">
+                <h3>Cactus de Noël</h3>
+                <img src="assets/images/cactus_noel.jpg" alt="Cactus de Noël">
+                <p><strong>Nom latin :</strong> Schlumbergera</p>
+                <p><strong>Caractéristiques :</strong> Ce cactus fleurit en hiver et apporte une touche colorée pendant les mois froids.</p>
+                <p><strong>Conseils de culture :</strong> Placez-le dans un endroit lumineux, mais à l'abri du soleil direct.</p>
             </div>
-        </div>
-    </section>
 
-    <?php include 'includes/footer.html'; ?>
+            <div class="plant-item">
+                <h3>Aloe Vera</h3>
+                <img src="assets/images/aloe_vera.jpg" alt="Aloe Vera">
+                <p><strong>Nom latin :</strong> Aloe barbadensis</p>
+                <p><strong>Caractéristiques :</strong> Une succulente facile à entretenir, idéale pour les débutants.</p>
+                <p><strong>Conseils de culture :</strong> Arrosez légèrement et laissez le sol sécher entre les arrosages.</p>
+            </div>
 
+            <!-- Ajouter plus de plantes ici -->
+        </section>
+
+        <footer>
+            <p>&copy; 2025 ToxiCactus - Tous droits réservés</p>
+        </footer>
+    </main>
+
+    <script src="js/main.js"></script>
 </body>
+
 </html>
