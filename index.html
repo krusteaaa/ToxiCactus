@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,49 +7,73 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 </head>
-
 <body>
-    <!-- En-tête -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="encyclopedia.html">Encyclopédie</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <!-- Section principale -->
-    <main>
-        <section class="intro">
-            <h1>Bienvenue sur ToxiCactus!</h1>
-            <p>Bienvenue dans l'univers piquant et hilarant de ToxiCactus, votre site dédié aux cactus et succulentes ! Nous vous offrons des conseils pratiques, des histoires folles et des plantes incroyables pour égayer votre intérieur.</p>
-            <img src="assets/images/cactus_intro.jpg" alt="Cactus rigolo" class="intro-img">
-        </section>
+    <div class="container">
+        <h1>ToxiCactus</h1>
+        <p>Bienvenue dans l'univers fun et piquant des cactus !</p>
+        <a href="encyclopedia.html" class="btn">Entrer</a>
+    </div>
 
-        <!-- Section des appels à l'action -->
-        <section class="cta">
-            <h2>Explorez notre univers</h2>
-            <div class="cta-buttons">
-                <a href="encyclopedia.html" class="cta-btn">Découvrez l'Encyclopédie</a>
-                <a href="blog.html" class="cta-btn">Lire notre Blog</a>
-            </div>
-        </section>
-
-        <!-- Section Footer -->
-        <footer>
-            <p>&copy; 2025 ToxiCactus - Tous droits réservés</p>
-            <ul>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Twitter</a></li>
-            </ul>
-        </footer>
-    </main>
-
-    <script src="js/main.js"></script>
 </body>
-
 </html>
+3️⃣ Vérifie ton fichier CSS (css/main.css)
+Colle ce CSS dans css/main.css pour que la page soit bien stylée :
+
+css
+Copier
+Modifier
+/* Réinitialisation du style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Applique Roboto et fond blanc */
+body {
+    background-color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Conteneur centré */
+.container {
+    max-width: 600px;
+    padding: 20px;
+}
+
+/* Titre principal */
+h1 {
+    font-size: 3em;
+    font-weight: 700;
+    color: #2e8b57;
+}
+
+/* Texte sous le titre */
+p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Bouton */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: white;
+    background-color: #2e8b57;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #4b9c3f;
+}
