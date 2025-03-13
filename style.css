@@ -1,3 +1,43 @@
+/* Réinitialisation du style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Applique Roboto et fond blanc */
+body {
+    background-color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+/* Conteneur centré pour la landing page */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Bouton */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: white;
+    background-color: #2e8b57;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #4b9c3f;
+}
+
 /* En-tête */
 header {
     background-color: #2e8b57;
