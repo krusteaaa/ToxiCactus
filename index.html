@@ -1,81 +1,29 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ToxiCactus - Encyclopédie des Cactus et Succulentes</title>
-
-    <!-- Lien vers les styles CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/animations.css">
+    <title>ToxiCactus</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
-
 <body>
+    <!-- Insertion du header -->
+    <?php include 'includes/header.html'; ?>
+    
+    <!-- Section Encyclopédie -->
+    <section id="encyclopedia">
+        <h1>Encyclopédie des Cactus et Succulentes</h1>
+        <!-- Contenu de l'encyclopédie ici -->
+    </section>
 
-    <!-- En-tête du site -->
-    <header>
-        <div class="logo">
-            <img src="img/logo.png" alt="ToxiCactus Logo">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="encyclopedie/index.html">Encyclopédie</a></li>
-                <li><a href="boutique/index.html">Boutique</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Section Vente -->
+    <section id="shop">
+        <h1>Vente en ligne</h1>
+        <!-- Contenu de la vente ici -->
+    </section>
 
-    <!-- Section principale avec un titre d'introduction -->
-    <main id="accueil">
-        <section class="intro">
-            <h1>Bienvenue sur ToxiCactus</h1>
-            <p>Explorez l'univers fascinant des cactus et des succulentes adaptées à notre climat.</p>
-            <p>Découvrez nos fiches détaillées et trouvez vos plantes préférées dans notre boutique en ligne.</p>
-        </section>
-
-        <!-- Section avec des liens vers l'encyclopédie et la boutique -->
-        <section class="cta">
-            <h2>Explorez nos sections</h2>
-            <div class="cta-container">
-                <div class="cta-item">
-                    <a href="encyclopedie/index.html">
-                        <h3>Encyclopédie</h3>
-                        <p>Découvrez les fiches détaillées de chaque plante, avec des conseils d'entretien et des informations spécifiques.</p>
-                    </a>
-                </div>
-                <div class="cta-item">
-                    <a href="boutique/index.html">
-                        <h3>Boutique</h3>
-                        <p>Achetez vos cactus et succulentes préférés directement en ligne.</p>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Section pour les visuels de plantes -->
-        <section class="visuels">
-            <h2>Quelques-unes de nos plantes</h2>
-            <div class="plant-images">
-                <img src="img/cactus1.jpg" alt="Cactus 1">
-                <img src="img/cactus2.jpg" alt="Cactus 2">
-                <img src="img/cactus3.jpg" alt="Cactus 3">
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer id="contact">
-        <p>&copy; 2025 ToxiCactus | Tous droits réservés</p>
-        <p>Contactez-nous à : <a href="mailto:contact@toxicactus.fr">contact@toxicactus.fr</a></p>
-    </footer>
-
-    <!-- Lien vers les fichiers JS -->
-    <script src="js/script.js"></script>
-    <script src="js/animations.js"></script>
-
+    <!-- Insertion du footer -->
+    <?php include 'includes/footer.html'; ?>
 </body>
-
 </html>
