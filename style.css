@@ -1,70 +1,141 @@
 /* main.css */
 
+/* Règles de base */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
+    background-color: #ffffff; /* Fond blanc */
+    font-family: 'Roboto', sans-serif; /* Typo élégante et moderne */
+    color: #333; /* Texte gris foncé pour un bon contraste */
     margin: 0;
     padding: 0;
 }
 
 header {
+    background-color: #2e8b57; /* Une couleur subtile pour le header */
+    padding: 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+main {
+    padding: 50px 20px;
+}
+
+/* Guide complet de culture */
+.general-guide {
+    margin-bottom: 40px;
+    font-size: 1.1em;
+}
+
+.general-guide h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #2e8b57;
+    margin-bottom: 20px;
+}
+
+.general-guide p {
+    line-height: 1.6;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Liste des grandes espèces */
+.species-list h2 {
+    font-size: 2em;
+    color: #2e8b57;
     text-align: center;
     margin-top: 50px;
 }
 
-header h1 {
-    font-size: 3em;
+.species-list ul {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center;
+}
+
+.species-list li {
+    display: inline-block;
+    margin: 20px;
+}
+
+.species-list li a {
+    color: #2e8b57;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+/* Détails de chaque espèce */
+.species-detail {
+    margin-top: 50px;
+}
+
+.species-detail h2 {
+    font-size: 2.2em;
     color: #2e8b57;
 }
 
-.intro {
-    text-align: center;
+.species-subdetail {
     margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.intro p {
-    font-size: 1.2em;
-    margin: 20px 0;
+.species-subdetail h3 {
+    font-size: 1.8em;
+    color: #2e8b57;
+    margin-bottom: 15px;
 }
 
-.enter-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 1.5em;
-    background-color: #2e8b57;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+.species-subdetail p {
+    font-size: 1.1em;
+    line-height: 1.6;
 }
 
-.enter-btn:hover {
-    background-color: #1e6b42;
+.species-subdetail img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
 }
 
-.cta-buttons {
-    text-align: center;
-    margin-top: 40px;
-}
-
-.cta-btn {
-    padding: 10px 20px;
-    font-size: 1.2em;
-    margin: 10px;
-    background-color: #2e8b57;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.cta-btn:hover {
-    background-color: #1e6b42;
-}
-
+/* Footer */
 footer {
+    background-color: #2e8b57;
+    color: white;
     text-align: center;
+    padding: 20px;
     margin-top: 50px;
-    font-size: 0.8em;
-    color: #777;
 }
+
+/* Réglages des liens */
+a {
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #4b9c3f; /* Un vert plus clair au survol */
