@@ -1,54 +1,60 @@
-/* Réinitialisation du style */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Applique Roboto et fond blanc */
-body {
-    background-color: #ffffff;
-    font-family: 'Roboto', sans-serif;
+/* En-tête */
+header {
+    background-color: #2e8b57;
+    padding: 15px;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    color: white;
+}
+
+header h1 {
     margin: 0;
+    font-size: 2em;
 }
 
-/* Conteneur centré */
-.container {
-    max-width: 600px;
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Contenu */
+main {
     padding: 20px;
+    max-width: 800px;
+    margin: auto;
 }
 
-/* Titre principal */
-h1 {
-    font-size: 3em;
-    font-weight: 700;
+/* Liste des espèces */
+.species-list {
+    list-style: none;
+    padding: 0;
+}
+
+.species-list li {
+    margin: 10px 0;
+}
+
+.species-list a {
+    text-decoration: none;
+    font-weight: bold;
     color: #2e8b57;
 }
 
-/* Texte sous le titre */
-p {
-    font-size: 1.2em;
-    color: #555;
-}
-
-/* Bouton */
-.btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 15px 30px;
-    font-size: 1.2em;
-    color: white;
-    background-color: #2e8b57;
-    text-decoration: none;
-    border-radius: 10px;
-    transition: background 0.3s;
-}
-
-.btn:hover {
-    background-color: #4b9c3f;
+.species-list a:hover {
+    text-decoration: underline;
 }
