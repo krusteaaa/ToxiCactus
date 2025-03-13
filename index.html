@@ -3,71 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ToxiCactus</title>
+    <title>ToxiCactus - Cactus et Succulentes</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
     <!-- Insertion du header -->
     <?php include 'includes/header.html'; ?>
-    
-    <!-- Section Encyclopédie -->
-    <section id="encyclopedia">
+
+    <!-- Section Présentation -->
+    <section id="presentation">
         <div class="content">
-            <h1>Bienvenue dans l'Encyclopédie des Cactus et Succulentes</h1>
-            <p>Explorez notre collection de cactus et succulentes, apprenez à les cultiver et découvrez des informations fascinantes sur ces plantes exceptionnelles.</p>
+            <h1>Bienvenue sur ToxiCactus</h1>
+            <p>Bienvenue sur le site dédié aux cactus et succulentes, où vous pourrez découvrir des plantes étonnantes, apprendre à les cultiver, et enrichir vos connaissances sur ces végétaux fascinants. Explorez notre encyclopédie et apprenez tout sur les variétés, les besoins et les astuces d'entretien des cactus et succulentes.</p>
+        </div>
+    </section>
 
-            <!-- Rechercher une plante -->
-            <div class="search-container">
-                <input type="text" id="search-input" placeholder="Rechercher une plante...">
-                <button onclick="searchPlantes()">Rechercher</button>
-            </div>
+    <!-- Section Encyclopédie -->
+    <section id="encyclopedie">
+        <div class="content">
+            <h2>Encyclopédie des Cactus et Succulentes</h2>
+            <p>Découvrez une sélection de cactus et succulentes adaptés à différents environnements. Cliquez sur les plantes pour en savoir plus.</p>
 
-            <!-- Liste des plantes (démonstration d'éléments) -->
-            <div id="plant-list">
-                <div class="plant-item">
-                    <h2>Cactus de Noël</h2>
-                    <p>Un cactus spectaculaire aux fleurs rouges éclatantes.</p>
+            <!-- Liste des catégories ou des plantes -->
+            <div class="categories">
+                <div class="category">
+                    <h3>Cactus</h3>
+                    <ul>
+                        <li><a href="cactus/echinocactus.html">Echinocactus</a></li>
+                        <li><a href="cactus/cereus.html">Cereus</a></li>
+                        <li><a href="cactus/feroce.html">Feroce</a></li>
+                    </ul>
                 </div>
-                <div class="plant-item">
-                    <h2>Aloe Vera</h2>
-                    <p>Une succulente aux propriétés médicinales.</p>
-                </div>
-                <div class="plant-item">
-                    <h2>Agave</h2>
-                    <p>Plante robuste adaptée aux climats secs.</p>
+                <div class="category">
+                    <h3>Succulentes</h3>
+                    <ul>
+                        <li><a href="succulentes/aloevera.html">Aloe Vera</a></li>
+                        <li><a href="succulentes/echeveria.html">Echeveria</a></li>
+                        <li><a href="succulentes/sedum.html">Sedum</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section Vente -->
-    <section id="shop">
+    <!-- Section Contact -->
+    <section id="contact">
         <div class="content">
-            <h1>Vente en ligne</h1>
-            <p>Découvrez nos cactus et succulentes à vendre. Chaque plante est unique et cultivée avec soin.</p>
-            
-            <!-- Exemples de plantes à vendre -->
-            <div class="product-list">
-                <div class="product-item">
-                    <img src="assets/images/cactus1.jpg" alt="Cactus de Noël">
-                    <h2>Cactus de Noël</h2>
-                    <p>Prix: 15€</p>
-                    <button>Acheter</button>
-                </div>
-                <div class="product-item">
-                    <img src="assets/images/cactus2.jpg" alt="Aloe Vera">
-                    <h2>Aloe Vera</h2>
-                    <p>Prix: 12€</p>
-                    <button>Acheter</button>
-                </div>
-                <div class="product-item">
-                    <img src="assets/images/cactus1.jpg" alt="Agave">
-                    <h2>Agave</h2>
-                    <p>Prix: 20€</p>
-                    <button>Acheter</button>
-                </div>
-            </div>
+            <h2>Contactez-nous</h2>
+            <p>Pour toute question ou demande d'information, n'hésitez pas à nous contacter. Nous serons ravis de vous aider !</p>
+            <form action="contact.php" method="POST">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
         </div>
     </section>
 
