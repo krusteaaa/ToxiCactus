@@ -4,6 +4,7 @@
 body {
     background-color: #ffffff; /* Fond blanc */
     font-family: 'Roboto', sans-serif; /* Typo élégante et moderne */
+    font-weight: 400;
     color: #333; /* Texte gris foncé pour un bon contraste */
     margin: 0;
     padding: 0;
