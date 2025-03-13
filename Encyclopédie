@@ -9,17 +9,38 @@
 <body>
     <header>
         <h1>Encyclopédie des Cactus et Succulentes</h1>
-        <a href="menu.html">Retour au menu</a>
+        <nav>
+            <a href="menu.html">Retour au menu</a>
+        </nav>
     </header>
 
     <main>
-        <section>
-            <h2>Explorez notre Encyclopédie</h2>
-            <p>Découvrez les différentes espèces de cactus et succulentes avec leurs caractéristiques.</p>
-            <div>
-                <a href="cactus.html">Les Cactus</a>
-                <a href="succulentes.html">Les Succulentes</a>
+        <section class="intro">
+            <h2>Bienvenue dans l'Encyclopédie</h2>
+            <p>Découvrez notre guide complet des cactus et succulentes. Chaque espèce est unique, et il est essentiel de comprendre leur habitat naturel pour les cultiver correctement.</p>
+        </section>
+
+        <section class="categories">
+            <h2>Catégories principales</h2>
+            <div class="category-list">
+                <a href="cactus.html" class="category-item">
+                    <h3>Cactus</h3>
+                    <p>Découvrez les cactus, ces plantes épineuses, et apprenez comment en prendre soin.</p>
+                </a>
+                <a href="succulentes.html" class="category-item">
+                    <h3>Succulentes</h3>
+                    <p>Les succulentes sont des plantes qui aiment l'eau et le soleil. Explorez nos conseils de culture.</p>
+                </a>
             </div>
+        </section>
+
+        <section class="detailed-guide">
+            <h2>Guide de Culture</h2>
+            <p>Chaque type de plante nécessite des soins spécifiques. Consultez les articles suivants pour en savoir plus :</p>
+            <ul>
+                <li><a href="cactus.html">Soins des Cactus</a></li>
+                <li><a href="succulentes.html">Soins des Succulentes</a></li>
+            </ul>
         </section>
     </main>
 
