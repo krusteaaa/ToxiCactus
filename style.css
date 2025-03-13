@@ -1,88 +1,24 @@
-/* Global settings */
+/* Exemple simple de style CSS */
 body {
-    font-family: 'Open Sans', sans-serif; /* Police simple et élégante */
-    background-color: white; /* Fond blanc pour la simplicité */
-    color: black; /* Texte noir pour un bon contraste */
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    color: black;
     margin: 0;
     padding: 0;
 }
 
-h1, h2 {
+h1 {
     text-align: center;
-    font-weight: bold;
+    font-size: 2em;
+    margin-top: 50px;
 }
 
-/* Header */
-header {
-    background-color: #f4f4f4; /* Fond léger pour le header */
+#encyclopedia, #shop {
     padding: 20px;
-    margin-bottom: 20px;
 }
 
-header h1 {
-    font-size: 2.5em;
-    color: #333; /* Gris foncé pour le titre */
-}
-
-/* Section Introduction */
-#introduction {
-    text-align: center;
-    padding: 20px;
-    margin-bottom: 40px;
-    font-size: 1.2em;
-}
-
-/* Navigation */
-nav {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #007bff; /* Bleu pour les liens */
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: #0056b3; /* Lien plus foncé au survol */
-}
-
-/* Sections principales (Encyclopédie et Shop) */
-section {
-    padding: 20px;
-    margin-bottom: 40px;
-}
-
-#encyclopedie, #shop {
-    text-align: center;
-}
-
-/* Footer */
 footer {
-    background-color: #f4f4f4;
     text-align: center;
-    padding: 15px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-footer a {
-    text-decoration: none;
-    color: #007bff;
-}
-
-footer a:hover {
-    color: #0056b3;
+    margin-top: 50px;
+    padding: 20px;
 }
