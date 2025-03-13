@@ -1,70 +1,55 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ToxiCactus - Cactus et Succulentes</title>
-    <link rel="stylesheet" href="style.css">
+    <title>ToxiCactus - Accueil</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-    <!-- Insertion du header -->
-    <?php include 'includes/header.html'; ?>
+    <!-- En-tête -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="encyclopedia.html">Encyclopédie</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- Section Présentation -->
-    <section id="presentation">
-        <div class="content">
-            <h1>Bienvenue sur ToxiCactus</h1>
-            <p>Bienvenue sur le site dédié aux cactus et succulentes, où vous pourrez découvrir des plantes étonnantes, apprendre à les cultiver, et enrichir vos connaissances sur ces végétaux fascinants. Explorez notre encyclopédie et apprenez tout sur les variétés, les besoins et les astuces d'entretien des cactus et succulentes.</p>
-        </div>
-    </section>
+    <!-- Section principale -->
+    <main>
+        <section class="intro">
+            <h1>Bienvenue sur ToxiCactus!</h1>
+            <p>Bienvenue dans l'univers piquant et hilarant de ToxiCactus, votre site dédié aux cactus et succulentes ! Nous vous offrons des conseils pratiques, des histoires folles et des plantes incroyables pour égayer votre intérieur.</p>
+            <img src="assets/images/cactus_intro.jpg" alt="Cactus rigolo" class="intro-img">
+        </section>
 
-    <!-- Section Encyclopédie -->
-    <section id="encyclopedie">
-        <div class="content">
-            <h2>Encyclopédie des Cactus et Succulentes</h2>
-            <p>Découvrez une sélection de cactus et succulentes adaptés à différents environnements. Cliquez sur les plantes pour en savoir plus.</p>
-
-            <!-- Liste des catégories ou des plantes -->
-            <div class="categories">
-                <div class="category">
-                    <h3>Cactus</h3>
-                    <ul>
-                        <li><a href="cactus/echinocactus.html">Echinocactus</a></li>
-                        <li><a href="cactus/cereus.html">Cereus</a></li>
-                        <li><a href="cactus/feroce.html">Feroce</a></li>
-                    </ul>
-                </div>
-                <div class="category">
-                    <h3>Succulentes</h3>
-                    <ul>
-                        <li><a href="succulentes/aloevera.html">Aloe Vera</a></li>
-                        <li><a href="succulentes/echeveria.html">Echeveria</a></li>
-                        <li><a href="succulentes/sedum.html">Sedum</a></li>
-                    </ul>
-                </div>
+        <!-- Section des appels à l'action -->
+        <section class="cta">
+            <h2>Explorez notre univers</h2>
+            <div class="cta-buttons">
+                <a href="encyclopedia.html" class="cta-btn">Découvrez l'Encyclopédie</a>
+                <a href="blog.html" class="cta-btn">Lire notre Blog</a>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Section Contact -->
-    <section id="contact">
-        <div class="content">
-            <h2>Contactez-nous</h2>
-            <p>Pour toute question ou demande d'information, n'hésitez pas à nous contacter. Nous serons ravis de vous aider !</p>
-            <form action="contact.php" method="POST">
-                <label for="name">Nom :</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email :</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message :</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-                <button type="submit">Envoyer</button>
-            </form>
-        </div>
-    </section>
+        <!-- Section Footer -->
+        <footer>
+            <p>&copy; 2025 ToxiCactus - Tous droits réservés</p>
+            <ul>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </footer>
+    </main>
 
-    <!-- Insertion du footer -->
-    <?php include 'includes/footer.html'; ?>
-
+    <script src="js/main.js"></script>
 </body>
+
 </html>
