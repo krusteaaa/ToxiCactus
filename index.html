@@ -13,17 +13,66 @@
     
     <!-- Section Encyclopédie -->
     <section id="encyclopedia">
-        <h1>Encyclopédie des Cactus et Succulentes</h1>
-        <!-- Contenu de l'encyclopédie ici -->
+        <div class="content">
+            <h1>Bienvenue dans l'Encyclopédie des Cactus et Succulentes</h1>
+            <p>Explorez notre collection de cactus et succulentes, apprenez à les cultiver et découvrez des informations fascinantes sur ces plantes exceptionnelles.</p>
+
+            <!-- Rechercher une plante -->
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Rechercher une plante...">
+                <button onclick="searchPlantes()">Rechercher</button>
+            </div>
+
+            <!-- Liste des plantes (démonstration d'éléments) -->
+            <div id="plant-list">
+                <div class="plant-item">
+                    <h2>Cactus de Noël</h2>
+                    <p>Un cactus spectaculaire aux fleurs rouges éclatantes.</p>
+                </div>
+                <div class="plant-item">
+                    <h2>Aloe Vera</h2>
+                    <p>Une succulente aux propriétés médicinales.</p>
+                </div>
+                <div class="plant-item">
+                    <h2>Agave</h2>
+                    <p>Plante robuste adaptée aux climats secs.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Section Vente -->
     <section id="shop">
-        <h1>Vente en ligne</h1>
-        <!-- Contenu de la vente ici -->
+        <div class="content">
+            <h1>Vente en ligne</h1>
+            <p>Découvrez nos cactus et succulentes à vendre. Chaque plante est unique et cultivée avec soin.</p>
+            
+            <!-- Exemples de plantes à vendre -->
+            <div class="product-list">
+                <div class="product-item">
+                    <img src="assets/images/cactus1.jpg" alt="Cactus de Noël">
+                    <h2>Cactus de Noël</h2>
+                    <p>Prix: 15€</p>
+                    <button>Acheter</button>
+                </div>
+                <div class="product-item">
+                    <img src="assets/images/cactus2.jpg" alt="Aloe Vera">
+                    <h2>Aloe Vera</h2>
+                    <p>Prix: 12€</p>
+                    <button>Acheter</button>
+                </div>
+                <div class="product-item">
+                    <img src="assets/images/cactus1.jpg" alt="Agave">
+                    <h2>Agave</h2>
+                    <p>Prix: 20€</p>
+                    <button>Acheter</button>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Insertion du footer -->
     <?php include 'includes/footer.html'; ?>
+
 </body>
 </html>
