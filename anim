@@ -1,5 +1,0 @@
-// Exemple de fonction pour afficher/masquer la section de vente
-document.getElementById('toggle-shop').addEventListener('click', function() {
-    const shopSection = document.getElementById('shop');
-    shopSection.style.display = shopSection.style.display === 'none' ? 'block' : 'none';
-});
