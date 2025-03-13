@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détails de la Plante - ToxiCactus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Insertion du header -->
+    <?php include 'includes/header.html'; ?>
+
+    <!-- Section Détails de la Plante -->
+    <section id="plant-details">
+        <div class="content">
+            <h1>Cactus de Noël</h1>
+            <img src="assets/images/cactus1.jpg" alt="Cactus de Noël">
+            <p><strong>Nom latin : </strong>Schlumbergera</p>
+            <p><strong>Description : </strong>Le Cactus de Noël est une plante vivace qui fleurit pendant l'hiver, souvent en décembre. Ses fleurs peuvent être rouges, roses ou blanches, et sont spectaculaires dans n'importe quel intérieur.</p>
+            <p><strong>Soins : </strong>Il préfère des conditions de lumière modérées et un arrosage modéré. Évitez l'exposition directe au soleil.</p>
+            <p><strong>Prix : </strong>15€</p>
+            <button>Acheter</button>
+        </div>
+    </section>
+
+    <!-- Insertion du footer -->
+    <?php include 'includes/footer.html'; ?>
+
+</body>
+</html>
+Explication de la Page details.html :
+Titre et image : Affiche un titre avec le nom de la plante et une image de la plante spécifique.
+Détails : Il y a une description complète de la plante, avec son nom latin, une brève description, et des informations sur les soins à lui apporter.
+Prix et bouton d'achat : Vous pouvez ajouter un bouton pour simuler l'achat ou rediriger vers une autre page de paiement.
+6. Ajout du Panier d'Achat (Page panier.html)
+Si vous souhaitez intégrer un système de panier, voici un exemple simple d'une page panier où les utilisateurs peuvent voir les articles qu'ils ont ajoutés et le total de leur commande.
+
+Fichier panier.html :
+html
+Copier
+Modifier
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panier - ToxiCactus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Insertion du header -->
+    <?php include 'includes/header.html'; ?>
+
+    <!-- Section Panier -->
+    <section id="cart">
+        <div class="content">
+            <h1>Votre Panier</h1>
+            <div class="cart-item">
+                <img src="assets/images/cactus1.jpg" alt="Cactus de Noël">
+                <div class="cart-item-details">
+                    <h2>Cactus de Noël</h2>
+                    <p>Prix: 15€</p>
+                    <input type="number" value="1" min="1">
+                    <button>Supprimer</button>
+                </div>
+            </div>
+
+            <div class="cart-item">
+                <img src="assets/images/cactus2.jpg" alt="Aloe Vera">
+                <div class="cart-item-details">
+                    <h2>Aloe Vera</h2>
+                    <p>Prix: 12€</p>
+                    <input type="number" value="1" min="1">
+                    <button>Supprimer</button>
+                </div>
+            </div>
+
+            <!-- Total du panier -->
+            <div id="total">
+                <h3>Total: 27€</h3>
+                <button>Passer à la caisse</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Insertion du footer -->
+    <?php include 'includes/footer.html'; ?>
+
+</body>
+</html>
