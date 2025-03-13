@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ToxiCactus - Encyclopédie</title>
+    <title>ToxiCactus - Encyclopédie des Cactus et Succulentes</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -21,31 +21,90 @@
     </header>
 
     <main>
-        <section class="encyclopedia-intro">
-            <h1>Bienvenue dans l'Encyclopédie des Cactus et Succulentes !</h1>
-            <p>Découvrez notre collection fascinante de cactus et de succulentes. Chaque plante a ses spécificités, ses besoins et son caractère unique. Apprenez à les connaître !</p>
+        <!-- Guide complet de culture générale -->
+        <section class="general-guide">
+            <h1>Guide complet de culture des Cactus et Succulentes</h1>
+            <p>Les cactus et succulentes sont des plantes fascinantes et relativement faciles à cultiver, à condition de suivre quelques règles simples. Voici les conseils généraux pour assurer leur bien-être :</p>
+            <ul>
+                <li><strong>Exposition :</strong> Placez vos plantes dans un endroit lumineux, mais pas en plein soleil toute la journée.</li>
+                <li><strong>Arrosage :</strong> Arrosez légèrement, en laissant le sol sécher entre chaque arrosage.</li>
+                <li><strong>Température :</strong> Les cactus et succulentes préfèrent des températures chaudes. Évitez les endroits trop froids.</li>
+                <li><strong>Substrat :</strong> Utilisez un substrat bien drainé, spécialement conçu pour les plantes succulentes.</li>
+            </ul>
         </section>
 
-        <section class="plant-list">
-            <h2>Nos Cactus et Succulentes</h2>
-            <div class="plant-item">
-                <h3>Cactus de Noël</h3>
-                <img src="assets/images/cactus_noel.jpg" alt="Cactus de Noël">
-                <p><strong>Nom latin :</strong> Schlumbergera</p>
-                <p><strong>Caractéristiques :</strong> Ce cactus fleurit en hiver et apporte une touche colorée pendant les mois froids.</p>
-                <p><strong>Conseils de culture :</strong> Placez-le dans un endroit lumineux, mais à l'abri du soleil direct.</p>
-            </div>
-
-            <div class="plant-item">
-                <h3>Aloe Vera</h3>
-                <img src="assets/images/aloe_vera.jpg" alt="Aloe Vera">
-                <p><strong>Nom latin :</strong> Aloe barbadensis</p>
-                <p><strong>Caractéristiques :</strong> Une succulente facile à entretenir, idéale pour les débutants.</p>
-                <p><strong>Conseils de culture :</strong> Arrosez légèrement et laissez le sol sécher entre les arrosages.</p>
-            </div>
-
-            <!-- Ajouter plus de plantes ici -->
+        <!-- Liste des grandes espèces -->
+        <section class="species-list">
+            <h2>Les Grandes Espèces de Cactus et Succulentes</h2>
+            <ul>
+                <li><a href="#cactus">Cactus</a></li>
+                <li><a href="#aloe">Aloe</a></li>
+                <li><a href="#agave">Agave</a></li>
+                <li><a href="#echeveria">Echeveria</a></li>
+                <!-- Ajouter d'autres grandes espèces si nécessaire -->
+            </ul>
         </section>
+
+        <!-- Cactus -->
+        <section id="cactus" class="species-detail">
+            <h2>Cactus</h2>
+            <p>Les cactus sont connus pour leurs épines et leur capacité à survivre dans des environnements très secs. Voici quelques espèces populaires :</p>
+            <ul>
+                <li><a href="#saguarocactus">Saguaro Cactus</a></li>
+                <li><a href="#pricklypear">Prickly Pear</a></li>
+                <li><a href="#barrelcactus">Barrel Cactus</a></li>
+                <!-- Ajouter d'autres espèces de cactus -->
+            </ul>
+        </section>
+
+        <!-- Aloe -->
+        <section id="aloe" class="species-detail">
+            <h2>Aloe</h2>
+            <p>Les Aloes sont des plantes succulentes souvent utilisées en médecine et cosmétiques. Découvrez les espèces populaires :</p>
+            <ul>
+                <li><a href="#aloevera">Aloe Vera</a></li>
+                <li><a href="#aloesaponi">Aloe Saponaria</a></li>
+            </ul>
+        </section>
+
+        <!-- Agave -->
+        <section id="agave" class="species-detail">
+            <h2>Agave</h2>
+            <p>Les Agaves sont des succulentes robustes qui se trouvent principalement dans les régions arides. Voici des espèces communes :</p>
+            <ul>
+                <li><a href="#agaveamericana">Agave Americana</a></li>
+                <li><a href="#agaveparryi">Agave Parryi</a></li>
+            </ul>
+        </section>
+
+        <!-- Echeveria -->
+        <section id="echeveria" class="species-detail">
+            <h2>Echeveria</h2>
+            <p>Les Echeveria sont des succulentes magnifiques, souvent utilisées dans la décoration d'intérieur. Voici des exemples d'espèces :</p>
+            <ul>
+                <li><a href="#echeverianodulosa">Echeveria Nodulosa</a></li>
+                <li><a href="#echeveriala">Echeveria La</a></li>
+            </ul>
+        </section>
+
+        <!-- Détails pour chaque espèce -->
+        <section id="saguarocactus" class="species-subdetail">
+            <h3>Saguaro Cactus</h3>
+            <img src="assets/images/saguaro_cactus.jpg" alt="Saguaro Cactus">
+            <p><strong>Nom latin :</strong> Carnegiea gigantea</p>
+            <p><strong>Caractéristiques :</strong> Le Saguaro Cactus est l'un des plus grands cactus du monde, pouvant atteindre plus de 12 mètres de hauteur.</p>
+            <p><strong>Conseils de culture :</strong> Il nécessite un sol très bien drainé et un endroit ensoleillé. Ne l'arrosez pas trop, car il préfère un climat sec.</p>
+        </section>
+
+        <section id="pricklypear" class="species-subdetail">
+            <h3>Prickly Pear</h3>
+            <img src="assets/images/pricklypear.jpg" alt="Prickly Pear">
+            <p><strong>Nom latin :</strong> Opuntia spp.</p>
+            <p><strong>Caractéristiques :</strong> Ce cactus est caractérisé par ses grandes épines et ses fruits comestibles.</p>
+            <p><strong>Conseils de culture :</strong> Arrosez modérément. Il aime les sols sableux et bien drainés.</p>
+        </section>
+
+        <!-- Répéter la même structure pour chaque espèce et sous-espèce -->
 
         <footer>
             <p>&copy; 2025 ToxiCactus - Tous droits réservés</p>
