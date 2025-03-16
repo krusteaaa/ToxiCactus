@@ -1,51 +1,32 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encyclopédie des Cactus et Succulentes</title>
-    <link rel="stylesheet" href="css/encyclopedie.css">
-</head>
-<body>
-    <header>
-        <h1>Encyclopédie des Cactus et Succulentes</h1>
-        <nav>
-            <a href="menu.html">Retour au menu</a>
-        </nav>
-    </header>
+---
+layout: default
+title: Encyclopédie
+permalink: /encyclopedie/
+---
 
-    <main>
-        <section class="intro">
-            <h2>Bienvenue dans l'Encyclopédie</h2>
-            <p>Découvrez notre guide complet des cactus et succulentes. Chaque espèce est unique, et il est essentiel de comprendre leur habitat naturel pour les cultiver correctement.</p>
-        </section>
+{% include header.html %}
 
-        <section class="categories">
-            <h2>Catégories principales</h2>
-            <div class="category-list">
-                <a href="cactus.html" class="category-item">
-                    <h3>Cactus</h3>
-                    <p>Découvrez les cactus, ces plantes épineuses, et apprenez comment en prendre soin.</p>
-                </a>
-                <a href="succulentes.html" class="category-item">
-                    <h3>Succulentes</h3>
-                    <p>Les succulentes sont des plantes qui aiment l'eau et le soleil. Explorez nos conseils de culture.</p>
-                </a>
-            </div>
-        </section>
+<main class="encyclo">
+  <h1>Encyclopédie des Plantes</h1>
 
-        <section class="detailed-guide">
-            <h2>Guide de Culture</h2>
-            <p>Chaque type de plante nécessite des soins spécifiques. Consultez les articles suivants pour en savoir plus :</p>
-            <ul>
-                <li><a href="cactus.html">Soins des Cactus</a></li>
-                <li><a href="succulentes.html">Soins des Succulentes</a></li>
-            </ul>
-        </section>
-    </main>
+  <div class="filters">
+    <button class="filter active" data-filter="all">Toutes</button>
+    <button class="filter" data-filter="cactus">Cactus</button>
+    <button class="filter" data-filter="succulente">Succulentes</button>
+  </div>
 
-    <footer>
-        <p>&copy; 2025 ToxiCactus. Tous droits réservés.</p>
-    </footer>
-</body>
-</html>
+  <div class="plantes-grid">
+    {% for plante in site.data.plantes %}
+    <article class="plante-card {{ plante.categorie }}">
+      <img src="{{ plante.image | relative_url }}" alt="{{ plante.nom }}">
+      <h3>{{ plante.nom }}</h3>
+      <div class="details">
+        <span class="difficulty {{ plante.difficulte }}">{{ plante.difficulte }}</span>
+        <p>{{ plante.description }}</p>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</main>
+
+{% include footer.html %}
