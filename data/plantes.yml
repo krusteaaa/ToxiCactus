@@ -1,1 +1,13 @@
+- nom: "Cierge du Pérou"
+  image: "/assets/img/cierge-perou.jpg"
+  famille: "Cactaceae"
+  taille: "4m"
+  arrosage: 1
+  fun_fact: "Peut survivre 2 ans sans eau !"
 
+- nom: "Echeveria"
+  image: "/assets/img/echeveria.jpg"
+  famille: "Crassulaceae"
+  taille: "20cm"
+  arrosage: 3
+  fun_fact: "Surnommée 'plante poupée' au Mexique"
