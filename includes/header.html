@@ -1,1 +1,15 @@
-
+<header class="header">
+  <a href="{{ '/' | relative_url }}">
+    <img src="{{ '/assets/img/logo.svg' | relative_url }}" alt="Logo ToxiCactus" width="200">
+  </a>
+  
+  <nav class="nav">
+    <button class="menu-toggle">☰</button>
+    <div class="nav-links">
+      <a href="{{ '/encyclopedie' | relative_url }}">Encyclopédie</a>
+      <a href="{{ '/boutique' | relative_url }}">Boutique</a>
+      <a href="{{ '/blog' | relative_url }}">Blog</a>
+      <button class="snipcart-checkout">🛒 <span class="snipcart-items-count"></span></button>
+    </div>
+  </nav>
+</header>
