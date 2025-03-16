@@ -1,1 +1,22 @@
+title: ToxiCactus
+email: contact@toxicactus.fr
+description: "Le site des cactus qui piquent d'amour !"
+baseurl: "/toxicactus"
+url: "https://[VOTRE_USERNAME].github.io"
 
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+      comments: true
+
+sass:
+  style: compressed
+
+snipcart:
+  api_key: "VOTRE_CLE_SNIPCART"
