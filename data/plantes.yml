@@ -1,13 +1,11 @@
-- nom: "Cierge du Pérou"
-  image: "/assets/img/cierge-perou.jpg"
-  famille: "Cactaceae"
-  taille: "4m"
-  arrosage: 1
-  fun_fact: "Peut survivre 2 ans sans eau !"
+- nom: "Cactus Saguaro"
+  categorie: "cactus"
+  difficulte: "facile"
+  image: "/assets/img/saguaro.jpg"
+  description: "Emblème du désert de Sonora, peut vivre 200 ans !"
 
-- nom: "Echeveria"
+- nom: "Echeveria Perle"
+  categorie: "succulente"
+  difficulte: "moyen"
   image: "/assets/img/echeveria.jpg"
-  famille: "Crassulaceae"
-  taille: "20cm"
-  arrosage: 3
-  fun_fact: "Surnommée 'plante poupée' au Mexique"
+  description: "Rosette parfaite aux reflets nacrés"
