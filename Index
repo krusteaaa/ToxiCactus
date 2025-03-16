@@ -1,1 +1,28 @@
+---
+layout: default
+title: Accueil
+permalink: /
+---
 
+{% include header.html %}
+
+<div class="hero">
+  <h1>Bienvenue chez ToxiCactus !</h1>
+  <p>Découvrez l'univers fascinant des plantes succulentes</p>
+</div>
+
+<section class="features">
+  <div class="feature-card">
+    <h2>📚 Encyclopédie</h2>
+    <p>Explorez +100 espèces de cactus</p>
+    <a href="/encyclopedie" class="button">Voir les plantes</a>
+  </div>
+  
+  <div class="feature-card">
+    <h2>✍️ Blog</h2>
+    <p>Conseils et anecdotes cactus</p>
+    <a href="/blog" class="button">Lire les articles</a>
+  </div>
+</section>
+
+{% include footer.html %}
