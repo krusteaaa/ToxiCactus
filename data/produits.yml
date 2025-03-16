@@ -1,13 +1,1 @@
-- id: 1
-  nom: "Kit Débutant"
-  prix: 29.90
-  image: "/assets/img/kit-debutant.jpg"
-  description: "1 cactus + pot design + guide"
-  categorie: "kits"
 
-- id: 2
-  nom: "Cactus Géant"
-  prix: 89.90
-  image: "/assets/img/cactus-geant.jpg"
-  description: "2m de hauteur, pièce maîtresse"
-  categorie: "grands"
